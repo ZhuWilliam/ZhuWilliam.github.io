@@ -1,0 +1,184 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	font-family: "Calibri";
+	font-size: 16px;
+	color: #444;
+	line-height: 1.6;
+	background-image: url("../img/stars.png");
+	background-repeat: repeat;
+}
+
+body::after {
+	background-color: #151515;
+	content: "";
+	opacity: .2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+a {
+	text-decoration: none;
+	color: #444;
+	opacity: .6;
+	transition: .4s;
+	cursor: pointer;
+}
+
+hr {
+	width: 95%;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em auto;
+	padding: 0;
+}
+
+img {
+	display: inline-block;
+	margin: 0;
+	width: 20%;
+	padding: 8px;
+	border-radius: 150px;
+	box-shadow: 0 0 8px 0 #aaa;
+}
+
+.card {
+	display: grid;
+	position: absolute;
+	left: 6em;
+	bottom: 6em;
+	background-color: #fff;
+	padding: 1em;
+	width: 32em;
+	height: 20em;
+	/* border-radius: 1.5em; */
+ 	box-shadow: 0 0 1px 0 #000;
+	/*animation: open .8s;*/
+}
+
+.grid-start {
+	align-self: start;
+}
+
+.grid-end {
+	align-self: end;
+}
+
+.main {
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 1em;
+	padding-bottom: 0;
+}
+
+.header {
+	padding-bottom: .5rem;
+	font-size: 2em;
+}
+
+.bio {
+	font-size: 1.25em;
+}
+
+.footer {
+	text-align: center;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	font-size: 2em;
+}
+
+.email {
+	color: #848484;
+}
+
+.links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+	.links a {
+		flex: 1;
+		width: 32px;
+		height: 32px;
+	}
+	
+	.links a:visited {
+		color: #444;
+	}
+
+	.links a:hover {
+		opacity: 1;
+	}
+
+.portfolio {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	left: 40em;
+	bottom: 6em;
+	padding: 2em;
+	width: 32em;
+	height: 40em;
+	transition: 1s;
+	background: white;
+}
+
+	.portfolio.active {
+		display: grid;
+		grid-auto-rows: 1fr;
+		opacity: 1;
+		animation: open .8s;
+	}
+
+	.portfolio:before{
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		position: absolute;
+		
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent; 
+		border-right:8px solid white;
+		left: -8px;
+		
+		bottom: 1.5em;
+	}
+
+.title {
+	font-size: 1.25em;
+}
+
+.desc {
+	margin: 0;
+}
+
+/* Animations */
+@keyframes open {
+	0% {
+		opacity: 0;
+		transform: rotateX(30deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}

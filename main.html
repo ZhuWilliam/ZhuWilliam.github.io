@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>William Zhu | Web Developer</title>
+	
+	<meta charset="utf-8">
+	<meta name="keywords" content="william,zhu,zhuwilliam">
+	<meta name="description" content="zhuwilliam.github.io">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Web Developer">
+	<meta property="og:site_name" content="William Zhu">
+	<meta property="og:url" content="https://zhuwilliam.github.io">
+
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="card">
+		<div class="main grid-start">
+			<div class="header">William Zhu</div>
+			<div class="bio">
+				<p>Web developer and software engineer.</p>
+				<p>Contact me at: <span class="email">williamzhu.dev@gmail.com</span></p>
+			</div>
+		</div>
+
+		<div class="footer grid-end">
+			<hr />
+
+			<div class="links">
+				<a href="https://github.com/zhuwilliam" title="My GitHub"><i class="fab fa-github fa-2x"></i></a>
+				<a href="https://www.linkedin.com/in/williambzhu/" title="My LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+				<a href="mailto:williamzhu.dev@gmail.com" title="Email Me"><i class="far fa-envelope fa-2x"></i></a>
+				<a class="portfolioButton" title="My Portfolio"><i class="portfolioIcon far fa-folder fa-2x"></i></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="portfolio">
+		<div>
+			<div class="header">Professional/Enterprise</div>
+			<div class="project">
+				<div class="title"><a href="https://www.global.ucla.edu/home" target="_blank" rel="noopener noreferrer">UCLA Global</a></div>
+			</div>
+			<div class="project">
+				<div class="title"><a href="https://en.wikipedia.org/wiki/UCLA_Language_Materials_Project">UCLA Language Materials Project (LMP)</a></div>
+			</div>
+			<div class="project">
+				<div class="title"><a href="https://www.davidoneillfilms.com" target="_blank" rel="noopener noreferrer">DavidONeillFilms.com</a></div>
+				<ul class="desc">
+					<li>Videographer portfolio website written with React.</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<div class="header">Personal</div>
+			<div class="project">
+				<div class="title">teto</div>
+				<ul class="desc">
+					<li>A classic Tetris clone written with modern Vanilla JS, for killing time when the internet crashes...</li>
+				</ul>
+			</div>
+			<div class="project">
+				<div class="title">VT2 Stats Analyzer</div>
+				<ul class="desc">
+					<li>A little app for recording and analyzing statistics from my time in Vermintide 2.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+	const portfolioButton = document.querySelector(".portfolioButton");
+	const portfolioIcon = document.querySelector(".portfolioIcon");
+	const portfolio = document.querySelector(".portfolio");
+	
+	portfolioButton.addEventListener("click", () => {
+		portfolio.classList.toggle("active");
+		portfolioIcon.classList.toggle("fa-folder");
+		portfolioIcon.classList.toggle("fa-folder-open");
+	});
+	
+	const body = document.querySelector("body");
+	body.addEventListener("mousemove", (e) => {
+		body.style.backgroundPositionX = -e.clientX / 20 + "px";
+		body.style.backgroundPositionY = -e.clientY / 20 + "px";
+	});
+	</script>
+</body>
+
+</html>
