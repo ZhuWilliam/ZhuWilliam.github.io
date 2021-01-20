@@ -63,7 +63,6 @@ img {
 	padding: 1em;
 	width: 32em;
 	height: 20em;
-	/* border-radius: 1.5em; */
  	box-shadow: 0 0 1px 0 #000;
 	/*animation: open .8s;*/
 }
@@ -77,10 +76,7 @@ img {
 }
 
 .main {
-	padding-left: 2em;
-	padding-right: 2em;
-	padding-top: 1em;
-	padding-bottom: 0;
+	padding: 1em 2em 0 2em;
 }
 
 .header {
@@ -97,8 +93,6 @@ img {
 }
 
 .title {
-	display: flex;
-	align-items: center;
 	font-size: 2em;
 }
 
