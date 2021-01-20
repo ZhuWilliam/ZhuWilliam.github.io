@@ -32,8 +32,6 @@ body::after {
 a {
 	text-decoration: none;
 	color: #444;
-	opacity: .6;
-	transition: .4s;
 	cursor: pointer;
 }
 
@@ -64,7 +62,6 @@ img {
 	width: 32em;
 	height: 20em;
  	box-shadow: 0 0 1px 0 #000;
-	/*animation: open .8s;*/
 }
 
 .grid-start {
@@ -93,7 +90,7 @@ img {
 }
 
 .email {
-	color: #848484;
+	font-style: italic;
 }
 
 .links {
@@ -107,6 +104,8 @@ img {
 		flex: 1;
 		width: 32px;
 		height: 32px;
+		opacity: .6;
+		transition: .4s;
 	}
 	
 	.links a:visited {
@@ -155,6 +154,10 @@ img {
 .title {
 	font-size: 1.25em;
 }
+
+	.title a {
+		text-decoration: underline;
+	}
 
 .desc {
 	margin: 0;
