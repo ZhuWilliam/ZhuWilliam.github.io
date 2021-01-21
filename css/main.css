@@ -1,3 +1,8 @@
+@font-face {
+	font-family: Avenir;
+	src: url("../font/Metropolis-Light.otf");
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -9,7 +14,7 @@ html, body {
 }
 
 body {
-	font-family: "Calibri";
+	font-family: "Avenir";
 	font-size: 16px;
 	color: #444;
 	line-height: 1.6;
