@@ -19,8 +19,8 @@
 
 <body>
 	<div class="card">
-		<div class="main grid-start">
-			<div class="header">William Zhu</div>
+		<div class="main grid-start" role="main">
+			<div class="header"><h1>William Zhu</h1></div>
 			<div class="bio">
 				<p>Web developer and software engineer.</p>
 				<p>Contact me at: <span class="email">williamzhu.dev@gmail.com</span></p>
@@ -30,7 +30,7 @@
 		<div class="footer grid-end">
 			<hr />
 
-			<div class="links">
+			<div class="links" aria-label="Links">
 				<a href="https://github.com/zhuwilliam" title="My GitHub"><i class="fab fa-github fa-2x"></i></a>
 				<a href="https://www.linkedin.com/in/williambzhu/" title="My LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
 				<a href="mailto:williamzhu.dev@gmail.com" title="Email Me"><i class="far fa-envelope fa-2x"></i></a>
@@ -39,24 +39,30 @@
 		</div>
 	</div>
 	
-	<div class="portfolio">
+	<div class="portfolio" aria-label="My Portfolio">
 		<div>
-			<div class="header">Professional/Enterprise</div>
-			<div class="project">
-				<div class="title"><a href="https://www.global.ucla.edu/home" target="_blank" rel="noopener noreferrer">UCLA Global</a></div>
-			</div>
-			<div class="project">
-				<div class="title"><a href="https://en.wikipedia.org/wiki/UCLA_Language_Materials_Project" target="_blank" rel="noopener noreferrer">UCLA Language Materials Project (LMP)</a></div>
-			</div>
+			<div class="header"><h2>Professional/Enterprise</h2></div>
 			<div class="project">
 				<div class="title"><a href="https://www.davidoneillfilms.com" target="_blank" rel="noopener noreferrer">DavidONeillFilms.com</a></div>
 				<ul class="desc">
 					<li>Professional videographer website written in React.</li>
 				</ul>
 			</div>
+			<div class="project">
+				<div class="title"><a href="https://www.global.ucla.edu/home" target="_blank" rel="noopener noreferrer">UCLA Global</a></div>
+			</div>
+			<div class="project">
+				<div class="title"><a href="https://en.wikipedia.org/wiki/UCLA_Language_Materials_Project" target="_blank" rel="noopener noreferrer">UCLA Language Materials Project (LMP)</a></div>
+			</div>
 		</div>
 		<div>
-			<div class="header">Personal</div>
+			<div class="header"><h2>Personal</h2></div>
+            <div class="project">
+				<div class="title">RuinaDB</div>
+				<ul class="desc">
+					<li>A website, inspired by ArkhamDB, for storing and displaying data for the game Library of Ruina.</li>
+				</ul>
+			</div>
 			<div class="project">
 				<div class="title">teto</div>
 				<ul class="desc">

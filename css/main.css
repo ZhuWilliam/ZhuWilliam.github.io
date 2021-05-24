@@ -22,6 +22,12 @@ body {
 	background-repeat: repeat;
 }
 
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
 body::after {
 	background-color: #151515;
 	content: "";
@@ -82,7 +88,7 @@ img {
 }
 
 .header {
-	padding-bottom: .5rem;
+	/*padding-bottom: .5rem;*/
 	font-size: 2em;
 }
 
